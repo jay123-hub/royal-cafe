@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Royal Café</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background: #3b1f16;
+      color: white;
+      padding: 18px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+      background: linear-gradient(
+        rgba(59,31,22,0.7),
+        rgba(59,31,22,0.7)
+      ),
+      url("https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1200&q=80");
+
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #e6a23c;
+      color: white;
+      padding: 13px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 50px 25px;
+      text-align: center;
+    }
+
+    section h2 {
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #3b1f16;
+    }
+
+    .price {
+      color: #d48720;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    footer {
+      background: #3b1f16;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .hero h2 {
+        font-size: 35px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>☕ Royal Café</h1>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Fresh Coffee, Happy Moments</h2>
+
+    <p>
+      Enjoy delicious coffee, snacks and a relaxing atmosphere.
+    </p>
+
+    <a href="#menu" class="btn">View Menu</a>
+  </section>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+
+    <div class="menu">
+
+      <div class="card">
+        <h3>☕ Cappuccino</h3>
+        <p>Rich and creamy coffee.</p>
+        <div class="price">₹120</div>
+      </div>
+
+      <div class="card">
+        <h3>🍕 Cheese Pizza</h3>
+        <p>Hot and cheesy pizza.</p>
+        <div class="price">₹220</div>
+      </div>
+
+      <div class="card">
+        <h3>🥪 Sandwich</h3>
+        <p>Fresh vegetable sandwich.</p>
+        <div class="price">₹100</div>
+      </div>
+
+      <div class="card">
+        <h3>🍰 Chocolate Cake</h3>
+        <p>Soft and delicious cake.</p>
+        <div class="price">₹150</div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Visit Us</h2>
+
+    <p>📍 Main Market, Siliguri</p>
+    <p>📞 +91 9462271129 </p>
+    <p>⏰ Open: 9 AM – 10 PM</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Royal Café | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
